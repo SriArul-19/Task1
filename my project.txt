@@ -1,0 +1,9 @@
+6. Medicine Dispensing & Pharmacy Management System
+Module 1: Bill Generation
+Add tests, treatments
+Auto calculation
+Create invoice
+Module 2: Payments + Invoice Management
+Update payment status
+Payment history
+PDF invoice generator
