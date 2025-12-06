@@ -1,0 +1,224 @@
+Objective of the Project:
+The primary objective of the Medicine Dispensing & Pharmacy Management System is to streamline the pharmacy operations by automating the processes such as medicine dispensing, inventory management, customer management, and order processing. It ensures accurate tracking of medicines, real-time stock updates, billing, and integration of insurance claims for the customers.
+
+Users and Their Functions:
+1. Admin:
+The Admin manages the entire system and ensures that all processes run smoothly.
+
+
+Functions:
+
+
+User Management: Admin can add, edit, and delete customer accounts.
+
+
+Inventory Management: Admin can add, update, and remove medicines from the inventory. Admin can view current stock levels and reorder medicines.
+
+
+Order Management: Admin can approve, cancel, and manage orders placed by customers.
+
+
+Billing & Payment: Admin can manage billing, track payments, and issue receipts.
+
+
+Insurance Claims Management: Admin processes insurance claims submitted by customers and ensures their verification.
+
+
+Reports: Admin can generate sales reports, stock reports, and insurance claim reports.
+
+
+
+
+2. Customer:
+The customer interacts with the system to place orders for medicines and track their prescription fulfillment.
+
+
+Functions:
+
+
+Medicine Search: Customers can search for medicines based on name, type, and availability.
+
+
+Prescription Upload: Customers can upload prescriptions for prescribed medicines.
+
+
+Order Placement: Customers can place orders for medicines, view their cart, and make payments.
+
+
+Insurance Claim: Customers can submit insurance claims for eligible medicines.
+
+
+Order Tracking: Customers can track the status of their orders.
+
+
+View Past Orders: Customers can view their previous orders and billing history.
+
+
+
+
+
+Modules in the System:
+
+
+Inventory Management:
+
+
+Manages the list of available medicines, stock levels, prices, and expiry dates.
+
+
+Key functions: Add new medicines, update stock, remove expired medicines.
+
+
+
+
+Order Management:
+
+
+Handles the ordering process from customers, including order creation, processing, and tracking.
+
+
+Key functions: Place new orders, cancel orders, generate invoices.
+
+
+
+
+Billing and Payment:
+
+
+Manages billing and payment processing for each order.
+
+
+Key functions: Generate invoices, apply discounts (if any), handle online/offline payments.
+
+
+
+
+Customer Management:
+
+
+Stores and manages customer details such as personal information, order history, and insurance eligibility.
+
+
+Key functions: Add and update customer profiles, manage login credentials.
+
+
+
+
+Insurance Module (Compulsory):
+
+
+Functionality: This module handles the insurance claims for customers. Customers can submit insurance claims for eligible medicines.
+
+
+Claims Processing: The admin verifies the submitted claims, ensures that the medicines fall under insurance coverage, and approves or rejects the claims.
+
+
+Insurance Coverage: Some medicines may be eligible for insurance reimbursement, reducing the total cost for the customer.
+
+
+Claim Status: Customers can check the status of their insurance claim (approved, rejected, pending).
+
+
+Integration with Payment System: Once the claim is approved, the system automatically updates the customer’s bill to reflect the insurance coverage.
+
+
+
+
+Tables involved:
+
+
+InsuranceClaims: Stores claims submitted by customers (ClaimID, CustomerID, MedicineID, ClaimAmount, Status).
+
+
+Medicines: List of medicines eligible for insurance.
+
+
+
+
+
+
+Reports Module:
+
+
+Generates real-time reports for Admin, including sales, inventory, and insurance claims.
+
+
+Key functions: View daily, monthly, and yearly sales reports, inventory levels, and claim status.
+
+
+
+
+
+Tables in the System:
+
+
+Customer Table:
+
+
+Fields: CustomerID, FirstName, LastName, Email, PhoneNumber, Address, InsuranceEligibility
+
+
+
+
+Medicine Table:
+
+
+Fields: MedicineID, Name, Category, Price, StockQuantity, ExpiryDate
+
+
+
+
+Order Table:
+
+
+Fields: OrderID, CustomerID, OrderDate, TotalAmount, PaymentStatus, InsuranceClaimID
+
+
+
+
+InsuranceClaims Table:
+
+
+Fields: ClaimID, CustomerID, MedicineID, ClaimAmount, ClaimStatus, ClaimDate
+
+
+
+
+Payment Table:
+
+
+Fields: PaymentID, OrderID, PaymentDate, PaymentAmount, PaymentMethod, PaymentStatus
+
+
+
+
+Prescription Table:
+
+
+Fields: PrescriptionID, CustomerID, MedicineID, Dosage, Instructions
+
+
+
+
+
+Other Important Things:
+
+
+Security: The system should implement role-based access control to ensure that only authorized users (admin) can access sensitive data and perform critical operations like modifying stock or processing insurance claims.
+
+
+Integration with Payment Gateways: The system should support integration with online payment systems (e.g., PayPal, Razorpay) for processing payments.
+
+
+User-Friendly Interface: The customer interface should be intuitive, with clear instructions for uploading prescriptions, placing orders, and checking insurance claims.
+
+
+Real-Time Stock Updates: As orders are placed, the system should update the stock levels in real-time.
+
+
+Notifications: Email/SMS notifications for order confirmation, shipping updates, insurance claim status, etc.
+
+
+
+Conclusion:
+The Medicine Dispensing & Pharmacy Management System is a comprehensive tool designed to optimize pharmacy operations. By automating key processes like inventory management, order processing, and billing, it ensures efficient and accurate service for both customers and administrators. The addition of an insurance module makes it especially valuable, allowing customers to benefit from insurance reimbursements for eligible medicines. This system can greatly improve the operational efficiency of a pharmacy, reduce human error, and provide customers with an enhanced service experience.
